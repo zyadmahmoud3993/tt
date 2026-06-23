@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="m-0 p-0 bg-black">
+    <div id="backgorundV"></div>
+    <div style="height: 1600vh;"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+
+<script type="text/javascript">
+    window.onload = function () {
+        let scrollyVideo = new ScrollyVideo({
+            scrollyVideoContainer: "backgorundV",
+            src: "./background/lv_0_٢٠٢٦٠٦٢٣٠٢٢٣٢٩.mp4",
+        });
+
+    let settime = setInterval(() => {
+        let video = document.querySelector("#backgorundV");
+        if(video.querySelector('canvas')){
+            clearInterval(settime);
+            alert('canvas');
+        }
+    }, 1000);
+   
+    };
+
+</script>
+
+</html>
