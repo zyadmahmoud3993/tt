@@ -30,6 +30,7 @@
 
         if(video.querySelector('canvas')){
             clearInterval(settime);
+            video.querySelector('canvas').classList.add('!w-full', '!h-full', '!object-cover');
             alert('canvas');
         }
     }, 1000);
