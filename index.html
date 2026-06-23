@@ -21,8 +21,6 @@
             scrollyVideoContainer: "backgorundV",
             src: "./background/lv_0_٢٠٢٦٠٦٢٣٠٢٢٣٢٩_4.mp4",
             fixed:true,
-            sticky:false,
-            cover:false,
             fill:true
         });
    video.querySelector('video').remove();
@@ -30,13 +28,9 @@
     let settime = setInterval(() => {
         if(video.querySelector('video')){
             video.querySelector('video').remove();
-        }
-
-        if(video.querySelector('canvas')){
             clearInterval(settime);
-            video.querySelector('canvas').classList.add('!object-fill','!w-full'); 
         }
-    }, 1000);
+    }, 2000);
     };
 
 </script>
