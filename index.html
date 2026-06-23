@@ -29,9 +29,10 @@
     let settime = setInterval(() => {
         if(video.querySelector('video')){
             video.querySelector('video').remove(); 
-            clearInterval(settime);
+            
         }
         if(video.querySelector('canvas')){
+            clearInterval(settime);
             video.querySelector('video').classList.add('!w-full','fixed','object-fill');
         }
     }, 1000);
