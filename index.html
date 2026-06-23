@@ -25,7 +25,9 @@
             cover:false
         });
    video.querySelector('video').remove();
-
+    video.style.width = "100%";
+    video.style.objectFit = "fill";
+    video.style.position = "fixed"; 
     let settime = setInterval(() => {
         if(video.querySelector('video')){
             video.querySelector('video').remove(); 
