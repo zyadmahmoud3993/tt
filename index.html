@@ -21,7 +21,7 @@
             scrollyVideoContainer: "backgorundV",
             src: "./background/lv_0_٢٠٢٦٠٦٢٣٠٢٢٣٢٩_4.mp4",
             sticky:false,
-            full:false,
+            full:true,
             cover:false
         });
    video.querySelector('video').remove();
@@ -30,6 +30,9 @@
         if(video.querySelector('video')){
             video.querySelector('video').remove(); 
             clearInterval(settime);
+        }
+        if(video.querySelector('canvas')){
+            video.querySelector('video').classList.add('!w-full','fixed','object-fill');
         }
     }, 1000);
     };
