@@ -20,9 +20,6 @@
         let scrollyVideo = new ScrollyVideo({
             scrollyVideoContainer: "backgorundV",
             src: "./background/lv_0_٢٠٢٦٠٦٢٣٠٢٢٣٢٩_4.mp4",
-            sticky:false,
-            cover:false,
-            full:false,
             debug:true
         });
    video.querySelector('video').remove();
@@ -32,7 +29,7 @@
             video.querySelector('video').remove();
             clearInterval(settime);
         }
-    }, 2000);
+    }, 1000);
     };
 
 </script>
