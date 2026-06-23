@@ -31,7 +31,7 @@
             video.querySelector('video').remove();  
         }
         if(video.querySelector('canvas')){
-            video.querySelector('canvas').classList('!w-full','object-fill');
+            video.querySelector('canvas').classList.add('!w-full','!object-fill');
             clearInterval(settime);
         }
     }, 1000);
