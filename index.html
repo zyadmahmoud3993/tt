@@ -9,7 +9,7 @@
 </head>
 
 <body class="m-0 p-0 bg-black">
-    <div id="backgorundV"></div>
+    <div id="backgorundV" class="!fixed !w-screen"></div>
     <div style="height: 1600vh;"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
@@ -30,7 +30,7 @@
 
         if(video.querySelector('canvas')){
             clearInterval(settime);
-            video.querySelector('canvas').classList.add('!w-full', '!h-full', '!object-cover');
+            video.querySelector('canvas').classList.add('!w-full', '!object-cover');
             alert('canvas');
         }
     }, 1000);
