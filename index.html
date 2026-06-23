@@ -20,12 +20,18 @@
         let scrollyVideo = new ScrollyVideo({
             scrollyVideoContainer: "backgorundV",
             src: "./background/lv_0_٢٠٢٦٠٦٢٣٠٢٢٣٢٩_4.mp4",
+            sticky:false,
+            full:false,
+            cover:false
         });
    video.querySelector('video').remove();
 
     let settime = setInterval(() => {
         if(video.querySelector('video')){
-            video.querySelector('video').remove();
+            video.querySelector('video').remove();  
+        }
+        if(video.querySelector('canvas')){
+            video.querySelector('canvas').classList('!w-full','object-fill');
             clearInterval(settime);
         }
     }, 1000);
